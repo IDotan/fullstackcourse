@@ -1,0 +1,32 @@
+.myProjects>div {
+    padding-bottom: 25px;
+}
+
+.projectInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.projectInfo>img {
+    max-width: 300px;
+}
+
+.contactLinks {
+    display: flex;
+    justify-content: center;
+}
+
+.contactLinks>a {
+    margin-right: 15px;
+}
+
+.contactLinks>img {
+    width: 20px;
+    padding-right: 2px;
+}
+
+.credit {
+    text-align: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\style\index.css">
+    <title>This is site</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#myProjects">My projects</a>
+            <a href="#contactMe">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about" id="about">
+            <h1>Itai Dotan</h1>
+            I am Itai Dotan and I have just started a Full Stack course to have more tools at my disposal.
+        </div>
+        <div class="myProjects" id="myProjects">
+            <h2>My Projects:</h2>
+            <div class='flaskProject'>
+                <h3>Flask website project:</h3>
+                <div class="projectInfo">
+                    <img src="static\img\flask-logo.png" alt="flask logo">
+                    <p>
+                        This is my first "big" python project. This project set up a website using flask for its backend with an SQL database.<br> The site include registration, personal ToDo list to use any where when logged in, E-mail password reset
+                        and some more features.<br>
+                        <a href="https://github.com/IDotan/FlaskWebsiteProject">Github link</a>
+                    </p>
+                </div>
+            </div>
+            <div class="sudoko">
+                <h3>Sudoku:</h3>
+                <div class="projectInfo">
+                    <img src="static\img\sudoko.png" alt="sudoku game screenshot">
+                    <p>
+                        Small and easy to use sudoku game and solver. Infinite number of puzzles to solve with 3 difficulties. Can enter your on sudoku and keep solving it in the application.<br> Playable 9x9 and 16x16 board, Auto save and load incomplete
+                        sudoku and Toggle mistakes marking.<br>
+                        <a href="https://github.com/IDotan/sudoku">Github link</a>
+                    </p>
+                </div>
+            </div>
+            <div class="pointToPoint">
+                <h3>PointToPoint</h3>
+                <div class="projectInfo">
+                    <img src="static\img\pointtopoint.png" alt="point to point screenshot">
+                    <p>
+                        Puzzle game with the objective to match every touching corners.<br> Swap and spin the tiles in order to solve the puzzle.<br>
+                        <a href="https://github.com/IDotan/PointToPoint">Github link</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contactMe" id="contactMe">
+            <h2>Contact Me:</h2>
+            <form action="">
+                <label for="fname">Full name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="lname">Phone:</label><br>
+                <input type="text" id="phone" name="phone"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30">
+                </textarea>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contactLinks">
+            <img src="static\img\mail.png" alt="mail icon"><a href="mailto:itai145@gmail.com">Send me an E-mail</a>
+            <img src="static\img\telephone.png" alt="telephone icon"><a href="tel:+972525343493">Give me a call</a>
+            <img src="static\img\linkedin.png" alt="LinkedIn icon"><a href="https://www.linkedin.com/in/idotan">Find me on LinkedIn</a>
+        </div>
+        <div class="credit">
+            <a class="copyright">&copy Itai Dotan 2021</a><br>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
