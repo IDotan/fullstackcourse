@@ -1,0 +1,29 @@
+h1 {
+    size: 20px;
+    color: orange;
+}
+
+form>fieldset {
+    box-shadow: 5px 8px rgb(92, 91, 91);
+    margin-bottom: 12px;
+    border: solid magenta;
+}
+
+form>fieldset>label {
+    color: blue;
+    font-weight: bold;
+}
+
+.text_input {
+    font-size: 24px;
+    background-color: yellow;
+    color: pink;
+}
+
+#submit_button {
+    height: 40px;
+    width: 270px;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\style\style.css">
+    <title>ex2 index page</title>
+</head>
+
+<body>
+    <h1>2nd Task page</h1>
+    <section>
+        <form method="GET">
+            <fieldset>
+                <label for="fname">First name:</label><br>
+                <input type="text" name="fname" class="text_input"><br>
+            </fieldset>
+            <fieldset>
+                <label for="lname">Last name:</label><br>
+                <input type="text" name="lname" class="text_input"><br>
+            </fieldset>
+            <fieldset>
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email"><br>
+            </fieldset>
+            <fieldset>
+                <label for="id">ID:</label><br>
+                <input type="number" min="100000000" max="999999999"><br>
+            </fieldset>
+            <fieldset>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="attack helicopter">Attack helicopter
+                <br>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message:</label><br>
+                <textarea name="message" rows="5" cols="30"></textarea><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit" id="submit_button">
+        </form>
+    </section>
+</body>
+
+</html>
