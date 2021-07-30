@@ -1,0 +1,170 @@
+body {
+    background: rgb(164, 218, 251);
+    margin: 0;
+}
+
+
+/* nav styles */
+
+nav {
+    text-align: center;
+    margin: 1em 0 1em 0;
+    font-weight: bold;
+}
+
+nav a {
+    margin-right: 1.5em;
+}
+
+nav a:nth-of-type(2) {
+    padding: 0 2px 0 2px;
+    border-left: black solid 2px;
+    border-right: black solid 2px;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #0000ee;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #00007c;
+}
+
+
+/* about styles */
+
+#about {
+    background: rgb(119, 174, 210);
+    padding: 1em 0px 1em 2em;
+    position: relative;
+}
+
+.languages {
+    margin: 1em 0 1em 0;
+}
+
+.languages span {
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-right: 0.75em;
+    background: rgb(7, 71, 113);
+}
+
+.contact_links img {
+    width: 1em;
+    padding-right: 1em;
+}
+
+.link_per {
+    display: flex;
+    margin: 0 0 0.5em 0;
+}
+
+.link_per a:link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.95em;
+}
+
+.link_per a:visited {
+    color: inherit;
+}
+
+.about_text {
+    display: inline-block;
+}
+
+#about>img {
+    border-radius: 1em;
+    width: 12em;
+    margin-left: 15em;
+}
+
+
+/* projects section */
+
+.my_projects {
+    margin: 2em 0 0 5em;
+}
+
+.project_info {
+    margin-bottom: 25px;
+    min-height: 10em;
+    position: relative;
+}
+
+.project_info h3 {
+    margin: 0;
+}
+
+.project_info h5 {
+    margin-top: 0;
+}
+
+.project_text {
+    position: absolute;
+    display: inline-block;
+}
+
+.project_info>img {
+    max-width: 18em;
+    border-radius: 1em;
+    margin-right: 2em;
+}
+
+
+/* contact form */
+
+.contact_me {
+    background: rgb(119, 174, 210);
+    border-top: 0.2em solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 1.5em;
+}
+
+.contact_me [type="text"],
+.contact_me [type="email"],
+.contact_me textarea {
+    margin: 0.3em;
+    outline: none;
+    font-size: 1.2em;
+}
+
+.contact_me [type="text"],
+.contact_me [type="email"] {
+    background: none;
+    border: none;
+    border-bottom: 0.15em solid rgb(0, 0, 0);
+}
+
+.contact_me textarea {
+    resize: none;
+    width: 30em;
+    height: 10em;
+    border: 0.15em solid rgb(0, 0, 0);
+    border-radius: 0.3em;
+}
+
+.contact_me [type="submit"] {
+    font-size: 1.2em;
+    border: 0.15em solid rgb(0, 0, 0);
+    padding: 0.3em 3em;
+    border-radius: 0.3em;
+}
+
+
+/* footer */
+
+.credit {
+    text-align: center;
+    border-top: 0.2em solid rgb(0, 0, 0);
+    padding: 1em;
+    background: rgb(64, 115, 138);
+    font-size: 0.85em;
+}
