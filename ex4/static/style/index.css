@@ -1,0 +1,255 @@
+:root {
+    --botton-bg: #DB4700;
+}
+
+body {
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+main {
+    padding: 8px;
+}
+
+a:link,
+a:visited,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* cover */
+
+#cover {
+    background-image: url(../img/mobile.png);
+    background-repeat: no-repeat;
+    font-size: 48px;
+    font-weight: 700;
+    height: 396px;
+    width: 345px;
+    margin: 0 auto;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+
+#cover_content {
+    padding: 47px 17px;
+}
+
+h1 {
+    margin: 0;
+    line-height: 47px;
+}
+
+#cover p {
+    display: none;
+}
+
+.cover_links {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.link_box {
+    background: var(--botton-bg);
+    height: 50px;
+    width: 128px;
+    border-radius: 6px;
+    margin-top: 120px;
+    color: #FFFFFF;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_box:nth-of-type(2) {
+    width: 148px;
+}
+
+
+/* item shop */
+
+#shop {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#shop h2 {
+    display: none;
+}
+
+.shop_items {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.shop_item {
+    text-align: start;
+}
+
+.shop_item img {
+    width: 158px;
+    height: 158px;
+}
+
+.shop_item_txt h3,
+.shop_item_txt h4 {
+    margin: 0;
+}
+
+.shop_item_txt h3 {
+    font-size: 14px;
+}
+
+.shop_item_txt h4 {
+    font-size: 10px;
+}
+
+.item_family {
+    opacity: 0.5;
+}
+
+.item_by:nth-of-type(1) {
+    display: none;
+}
+
+.item_price {
+    color: var(--botton-bg);
+}
+
+.item_price>span {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.075em;
+    color: rgb(0, 0, 0);
+}
+
+#shop>.link_box {
+    margin: 33px auto;
+}
+
+
+/* banner */
+
+#banner {
+    background-image: url(../img/discover-mobile.png);
+    background-repeat: no-repeat;
+    height: 314px;
+    width: 345px;
+    border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#banner_inside {
+    padding: 8px;
+}
+
+#banner_inside h2 {
+    font-size: 48px;
+}
+
+#banner_inside h3 {
+    font-weight: 400;
+}
+
+#banner_inside .link_box {
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    color: var(--botton-bg);
+    width: 151px;
+}
+
+@media only screen and ( min-width: 1024px) {
+    /* cover desktop */
+    #cover {
+        background-image: url(../img/desktop.png);
+        height: 738px;
+        width: 97vw;
+    }
+    h1 {
+        font-size: 96px;
+        line-height: 94px;
+    }
+    #cover_content {
+        padding: 120px 112px;
+    }
+    #cover_h_comma {
+        display: none;
+    }
+    #cover p {
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        margin-top: 40px;
+    }
+    .cover_links {
+        font-size: 24px;
+        justify-content: start;
+        gap: 40px;
+    }
+    .link_box {
+        margin-top: 24px;
+        height: 58px;
+        width: 191px;
+    }
+    .link_box:nth-of-type(2) {
+        width: 245px;
+    }
+    /* item shop desktop */
+    #shop {
+        padding: 35px;
+    }
+    #shop>h2 {
+        font-size: 48px;
+        font-weight: 700;
+        display: block;
+    }
+    .shop_items {
+        gap: 49px;
+    }
+    .shop_item img {
+        width: 366px;
+        height: 366px;
+    }
+    .shop_item_txt h3 {
+        font-size: 24px;
+    }
+    .shop_item_txt h4 {
+        font-size: 14px;
+    }
+    .item_by:nth-of-type(1) {
+        display: block;
+    }
+    .item_by:nth-of-type(2) {
+        display: none;
+    }
+    #shop>.link_box {
+        margin: 118px auto;
+    }
+    /* banner desktop */
+    #banner {
+        background-image: url(../img/discover-desktop.png);
+        height: 369px;
+        width: 97vw;
+    }
+    #banner_inside {
+        font-size: 24px;
+    }
+    #banner_inside h2 {
+        font-size: 72px;
+    }
+    #banner_inside .link_box {
+        width: 255px;
+    }
+}
