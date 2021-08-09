@@ -64,6 +64,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .link_box:nth-of-type(2) {
@@ -202,6 +204,7 @@ h1 {
         margin-top: 24px;
         height: 58px;
         width: 191px;
+        font-size: 24px;
     }
     .link_box:nth-of-type(2) {
         width: 245px;
