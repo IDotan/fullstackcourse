@@ -51,25 +51,16 @@ h1 {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    margin-top: 7em;
 }
 
 .link_box {
+    display: inline-block;
     background: var(--botton-bg);
-    height: 50px;
-    width: 128px;
     border-radius: 6px;
-    margin-top: 120px;
     color: #FFFFFF;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
     font-weight: 700;
-}
-
-.link_box:nth-of-type(2) {
-    width: 148px;
+    padding: 1.3em 1.8em;
 }
 
 
@@ -132,8 +123,10 @@ h1 {
     color: rgb(0, 0, 0);
 }
 
-#shop>.link_box {
-    margin: 33px auto;
+#shop .link_box {
+    margin: 2.063em auto;
+    color: #FFFFFF;
+    padding: 1.3em 2.8em;
 }
 
 
@@ -168,7 +161,7 @@ h1 {
     margin: 0 auto;
     background-color: #FFFFFF;
     color: var(--botton-bg);
-    width: 151px;
+    padding: 1em 1.5em;
 }
 
 @media only screen and ( min-width: 1024px) {
@@ -198,16 +191,12 @@ h1 {
     .cover_links {
         font-size: 24px;
         justify-content: start;
-        gap: 40px;
+        margin-top: 1em;
+        gap: 1.8em;
     }
     .link_box {
-        margin-top: 24px;
-        height: 58px;
-        width: 191px;
-        font-size: 24px;
-    }
-    .link_box:nth-of-type(2) {
-        width: 245px;
+        padding: 0.8em 1.4em;
+        font-size: 24px
     }
     /* item shop desktop */
     #shop {
@@ -237,7 +226,7 @@ h1 {
     .item_by:nth-of-type(2) {
         display: none;
     }
-    #shop>.link_box {
+    #shop .link_box {
         margin: 118px auto;
     }
     /* banner desktop */
@@ -251,8 +240,5 @@ h1 {
     }
     #banner_inside h2 {
         font-size: 72px;
-    }
-    #banner_inside .link_box {
-        width: 255px;
     }
 }
