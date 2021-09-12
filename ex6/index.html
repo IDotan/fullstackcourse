@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\style\index.css">
+    <title>ex6</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="menu_toggle">
+        <label for="menu_toggle">
+            <div class="menu_btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </label>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">My projects</a>
+            <a href="#">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form class="base_style">
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" class="form_input">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="e@mail.com" class="form_input">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="052-123-4567" class="form_input">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" class="form_input">
+            </form>
+            <button class="btn" onclick="read_form()">Submit</button>
+        </section>
+
+        <section class="base_style">
+            <span>You'r name is: <spna class="span_data"></spna></span>
+            <span>You'r email is: <spna class="span_data"></spna></span>
+            <span>You'r phone number is: <spna class="span_data"></spna></span>
+            <span>You'r age is: <spna class="span_data"></spna></span>
+        </section>
+
+        <div id="scroll_msg" class="base_style">
+            we are going down
+        </div>
+
+        <section id="naughty_section" class="base_style hide">
+            <img src="https://www.seriemaniac.com/wp-content/uploads/2012/08/las-mejores-frases-de-bart-simpson.jpg"
+                alt="bart simpson nervana baby style">
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="static\scripts\scripts.js"></script>
+</body>
+
+</html>
