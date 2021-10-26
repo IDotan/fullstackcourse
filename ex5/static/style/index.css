@@ -15,6 +15,9 @@ html {
     --input-txt: inherit;
     --textarea-submit-bg: #f4f4f4;
     --boxshdow-color: #000000;
+    --projects-outer-border: solid var(--boarder-color) 0.1em;
+    --pyton-tab-clr: #3472a27d;
+    --html-tab-clr: #3587C6BF;
     --loadscreen-time: 1.5s;
     --nav-z: 10;
     --loadscreen-z: 50;
@@ -243,6 +246,7 @@ header .logo {
 
 .about_text {
     display: inline-block;
+    max-width: 50ch;
 }
 
 .languages {
@@ -260,11 +264,11 @@ header .logo {
     background: var(--skills-bg-color);
     height: 1.3em;
     transition: margin-top 0.5s;
+    box-shadow: 0.1em 0.1em 0.3em var(--boxshdow-color);
 }
 
 .languages span:hover {
     margin-top: -0.625rem;
-    box-shadow: 0.1em 0.1em 0.3em var(--boxshdow-color);
 }
 
 .about_links {
@@ -339,9 +343,10 @@ header .logo {
 }
 
 #about>img {
+    width: 12em;
     align-self: center;
     border-radius: 1em;
-    width: 12em;
+    box-shadow: 2px 5px 10px var(--boxshdow-color);
 }
 
 /* projects section */
@@ -351,6 +356,54 @@ header .logo {
     padding: 2em 0;
     width: max-content;
     max-width: 85vw;
+}
+
+.projects_tab {
+    display: inline-block;
+    width: max-content;
+    padding: 0.5em;
+    padding-top: 1em;
+    border: var(--projects-outer-border);
+    border-bottom: 0;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.projects_tab>img {
+    height: 1em;
+}
+
+.sunken_tab {
+    box-shadow: 1px 1px 0.5em #555 inset;
+}
+
+.python_tab {
+    background-color: var(--pyton-tab-clr);
+}
+
+.web_tab {
+    background-color: var(--html-tab-clr);
+}
+
+#projects_folder {
+    padding: 1em;
+    border: var(--projects-outer-border);
+    border-radius: 1em;
+    border-top-left-radius: 0;
+}
+
+#python_projects, #web_projects {
+    display: none;
+}
+
+.python_tab #python_projects {
+    display: block;
+}
+
+.web_tab #web_projects {
+    display: block;
 }
 
 .project_info {
@@ -373,9 +426,10 @@ header .logo {
 }
 
 .project_info>img {
-    max-width: 18em;
+    width: 95%;
     border-radius: 1em;
     align-self: center;
+    box-shadow: 2px 5px 10px var(--boxshdow-color);
 }
 
 /* whatsapp */
@@ -491,7 +545,7 @@ footer {
 
 @media only screen and (min-width:1024px) {
     :root {
-        font-size: 24px;
+        font-size: 20px;
     }
     /* navbar desktop */
     nav {
@@ -508,13 +562,13 @@ footer {
         flex-flow: nowrap;
         width: 85vw;
     }
-    .about_text p {
-        max-width: 50vw;
-    }
     /* projects section desktop */
     .project_info {
         flex-flow: nowrap;
         max-width: 75vw;
+    }
+    .project_info>img {
+        width: 18em;
     }
     /* nav test */
     header label {
