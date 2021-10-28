@@ -18,8 +18,7 @@ html {
     --projects-outer-border: solid var(--boarder-color) 0.1em;
     --pyton-tab-clr: #3472a27d;
     --html-tab-clr: #3587C6BF;
-    --loadscreen-time: 0s;
-    /* 1.5 */
+    --loadscreen-time: 1.5s;
     --nav-z: 10;
     --loadscreen-z: 50;
 }
