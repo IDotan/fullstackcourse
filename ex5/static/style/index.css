@@ -18,7 +18,8 @@ html {
     --projects-outer-border: solid var(--boarder-color) 0.1em;
     --pyton-tab-clr: #3472a27d;
     --html-tab-clr: #3587C6BF;
-    --loadscreen-time: 1.5s;
+    --loadscreen-time: 0s;
+    /* 1.5 */
     --nav-z: 10;
     --loadscreen-z: 50;
 }
@@ -392,6 +393,7 @@ header .logo {
     border: var(--projects-outer-border);
     border-radius: 1em;
     border-top-left-radius: 0;
+    overflow: hidden;
 }
 
 #python_projects, #web_projects {
@@ -407,10 +409,28 @@ header .logo {
 }
 
 .project_info {
+    position: relative;
     display: flex;
     flex-flow: column;
     gap: 2em;
     margin-bottom: 2.5em;
+    transition: left 0.5s ease-in-out, right 0.5s ease-in-out;
+}
+
+.project_info:nth-of-type(2n) {
+    left: 0;
+}
+
+.project_info:nth-of-type(2n+1) {
+    right: 0;
+}
+
+.project_info.hide:nth-of-type(2n) {
+    left: 100vw;
+}
+
+.project_info.hide:nth-of-type(2n+1) {
+    right: 100vw;
 }
 
 .project_info h3 {
@@ -422,11 +442,13 @@ header .logo {
 }
 
 .project_info p {
+    max-width: 60ch;
     margin-bottom: 0;
 }
 
 .project_info>img {
     width: 95%;
+    max-width: 25em;
     border-radius: 1em;
     align-self: center;
     box-shadow: 2px 5px 10px var(--boxshdow-color);

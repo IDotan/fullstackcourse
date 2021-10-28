@@ -94,5 +94,31 @@ function eventAssign() {
     });
 };
 
+/**
+ * Show or hide projects according to page position.
+ */
+function show_hide_projects() {
+    let folder = document.getElementById('projects_folder');
+    if (folder.getBoundingClientRect().y > window.innerHeight || folder.getBoundingClientRect().bottom < 0) { return };
+    let zip = [document.getElementById('python_projects').children, document.getElementById('web_projects').children];
+    let max;
+    zip[0].length > zip[1].length ? max = zip[0].length : max = zip[1].length;
+    for (let i = 0; i < max; i++) {
+        let projet_pos = zip[0][i].getBoundingClientRect();
+        if (!document.getElementById('projects_folder').classList.contains('python_tab')) { projet_pos = zip[1][i].getBoundingClientRect() };
+        if (projet_pos.bottom - (projet_pos.height * 0.7) <= window.innerHeight) {
+            zip[0][i].classList.remove('hide');
+            if (zip[1][i]) { zip[1][i].classList.remove('hide'); }
+        } else {
+            zip[0][i].classList.add('hide');
+            if (zip[1][i]) { zip[1][i].classList.add('hide'); }
+        };
+    };
+};
+
 eventAssign();
-document.onload = mobile_menu_close();
+window.onload = () => {
+    mobile_menu_close();
+    show_hide_projects();
+}
+window.addEventListener('scroll', show_hide_projects)
