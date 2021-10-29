@@ -120,5 +120,5 @@ eventAssign();
 window.onload = () => {
     mobile_menu_close();
     show_hide_projects();
-}
-window.addEventListener('scroll', show_hide_projects)
+};
+window.addEventListener('scroll', show_hide_projects);
